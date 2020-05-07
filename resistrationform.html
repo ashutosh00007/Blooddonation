@@ -1,0 +1,241 @@
+<html>
+<head>
+<title>SignUp</title>
+<link rel="stylesheet" href="style.css">   
+    <style>
+        #su{
+            border: 3px solid red;
+            height: 100%;
+            width:70%;
+            background-color: white;
+            margin:20px;
+            padding: 20px;
+            border-radius: 20px;
+            
+            
+            
+                        
+        }
+        #ravi{
+            font-family: segoe UI;
+            font-style: bold;
+            color:red;
+            font-size:15px;
+            text-align: left;
+            
+            
+        }
+        #manisha{
+            border: 2px solid red;
+            border-radius: 5px;
+            height: 5%;
+            width:80%;
+            font-size: 20px;
+            background-color: aliceblue;
+        }
+        #dob
+        {
+            border:2px solid red;
+            border-radius: 5px;
+            height:5%;
+        }
+        #button
+{
+margin-left:0%;
+width:20%;
+height:5%;
+margin-right:10%;
+background-color:red;
+}
+
+    
+    </style>
+ </head>
+    <body>
+	<div class="a">
+    <label for="show-menu" class="show-menu">Show Menu</label>
+    <input type="checkbox" id="show-menu" role="button">
+        <ul id="menu">
+        <li><a href="home1.html">Home</a></li>
+        
+        <li>
+            <a href="#">Blood donation ￬</a>
+            <ul class="hidden">
+			<li><a href="process.html">Process of Blood Donation</a></li>
+                <li><a href="benefits of donating blood.html">Benefits of donating blood</a></li>
+                <li><a href="myths.html">Blood donation myths</a></li>
+                <li><a href="eligibility.html">Eligibility for donating blood</a></li>
+            </ul>
+        </li>
+		<li>
+		<a href="sbb.html">Blood Banks</a>
+		<ul class="hidden">
+		<li>
+            <a href="sbb.html">Search Blood Banks</a>
+            <a href="resistrationform.html">Registration form for user and doctor</a>
+        </li>
+		</ul>
+		</li>
+        <li><a href="feedbacklogin.html">Feedback</a></li>
+        <li><a href="contact.html">Contact</a></li>
+		<li><a href="loginpage.html">Login/Resister</a></li>
+    </ul>
+	</div>
+        <table style="height: 145%">
+            <tr>
+                <td rowspan="2" height="50%" width="50%">
+    <div id="su" >
+    <form>
+         <label id="ravi">Registration For</label><br>
+        <input id="radio" type="radio" name="male" value="Male" onclick="a()"><label id="ravi">Doctor</label>
+        <input id="radio" type="radio" name="female" value="Female" onclick="b()"><label id="ravi">User</label><br>
+    <label id="ravi">Name</label><br>
+    <input type="text" id="manisha" name=name ><br>
+    <label id="ravi">E-Mail</label><br>
+    <input type="email" id="manisha" name=email  required><br>
+    <label id="ravi">Contact Number</label><br>
+    <input type="text" id="manisha" name="phoneno"  required><br>
+    <label id="ravi">Village</label><br>
+    <input type="text" id="manisha" name="village"  required><br>
+        
+         <label id="ravi">street</label><br>
+    <input type="text" id="manisha" name=streetnumber ><br>
+        
+    <label id="ravi">District</label><br>
+    <input type="district" id="manisha" name="district"  required><br>
+    <label id="ravi">State</label><br>
+    <input type="state" id="manisha" name="state" required><br>
+    <label id="ravi">Date of Birth</label><br>
+    <select id="dob">
+    <option>1</option>
+    <option>2</option>
+        <option>3</option>
+<option>4</option>
+<option>5</option>
+<option>6</option>
+<option>7</option>
+<option>8</option>
+<option>9</option>
+<option>10</option>
+<option>11</option>
+<option>12</option>
+<option>13</option>
+<option>14</option>
+<option>15</option>
+<option>16</option>
+<option>17</option>
+<option>18</option>
+<option>19</option>
+<option>20</option>
+<option>21</option>
+<option>22</option>
+<option>23</option>
+<option>24</option>
+<option>25</option>
+<option>26</option>
+<option>27</option>
+<option>28</option>
+<option>29</option>
+<option>30</option>
+<option>31</option>
+</select>
+<select id="dob">
+<option>january</option>
+<option>february</option>
+<option>march</option>
+<option>april</option>
+<option>may</option>
+<option>june</option>
+<option>july</option>
+<option>august</option>
+<option>september</option>
+<option>october</option>
+<option>november</option>
+<option>december</option>
+</select>
+<select id="dob">
+<option>1980</option>
+<option>1981</option>
+<option>1982</option>
+<option>1983</option>
+<option>1984</option>
+    .
+<option>1985</option>
+<option>1986</option>
+<option>1987</option>
+<option>1988</option>
+<option>1989</option>
+<option>1990</option>
+<option>1991</option>
+<option>1992</option>
+<option>1993</option>
+<option>1994</option>
+<option>1995</option>
+<option>1996</option>
+<option>1997</option>
+<option>1998</option>
+<option>1999</option>
+</select><br>
+        <label id="ravi">Gender</label><br>
+        
+        <input id="radio" type="radio" name="male" value="Male"><label id="ravi">Male</label>
+        
+        <input id="radio" type="radio" name="female" value="Female"><label id="ravi">Female</label><br>
+        <label id="ravi">Blood Group</label><br>
+        <select id="manisha"  onchange="myfun()">
+       <option value="O+">O+
+       <option value="O-">O-
+<option value="A+">A+
+<option value="A-">A-
+<option value="B+">B+
+<option value="B-">B-
+<option value="AB+">AB+
+<option value="AB-">AB-
+</select><br>
+        
+        <label id="ravi">Security Question</label><br>
+        <select id="manisha"  onchange="myfun()">
+       <option value="what is your pet name">what is your pet name
+       <option value="your favourate movie">your favourate movie
+<option value="your favourate actor">your favourate actor
+<option value="any mole on your body">any mole on your body
+        </select>
+
+        <br>
+        <label id="ravi">answer</label><br>
+    <input type="text" id="manisha" name=answer ><br>
+        
+        
+        <br>
+        <center>
+    <input type="button" id="button" onclick="abc()" value="Register"></center>
+        <script>
+function abc()
+{ alert("REGISTER SUCESSFULLY DONE");}
+            function a()
+{ alert("YOUR ARE REGISTERING FOR DOCTOR");}
+            function b()
+{ alert("YOUR ARE REGISTERING FOR USER");}
+
+
+            
+</script>
+
+        
+        </form>
+    </div></td>
+                <td>
+    <img id="polu" src="blood-donation.jpg">
+     </td> </tr>  
+            <tr> 
+            <td> <img id="polu" src="search2.jpg"></td>
+            </tr>
+            
+            
+            
+            
+            
+            
+    </table>    
+        </body>
+</html>

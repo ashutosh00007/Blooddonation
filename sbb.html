@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="style.css">
+<style>
+.item1{grid-area:div1;}
+.item2{grid-area:div2;}
+.item3{grid-area:div3;}
+
+
+.grid-container
+{
+display:grid;
+grid-gap:0px;
+grid-template-areas:
+'div1 div2 div3'
+
+}
+.grid-container>div
+{
+background-color:white;
+color:black;
+font-family:arial;
+font-size:15px;
+text-align:left;
+padding:10px;
+
+</style>
+</head>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+	<style>
+	
+
+	</style>
+</head>
+<body>
+<div>
+<img src="blood-logo.png"><b style="float:right;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+Cotact us-8577923659</b><b style="color:red;float:right">Give Blood Save Life</b
+
+
+</div>
+<div class="a">
+    <label for="show-menu" class="show-menu">Show Menu</label>
+    <input type="checkbox" id="show-menu" role="button">
+        <ul id="menu">
+        <li><a href="home1.html">Home</a></li>
+        
+        <li>
+            <a href="#">Blood donation ￬</a>
+            <ul class="hidden">
+			<li><a href="process.html">Process of Blood Donation</a></li>
+                <li><a href="benefits of donating blood.html">Benefits of donating blood</a></li>
+                <li><a href="myths.html">Blood donation myths</a></li>
+                <li><a href="eligibility.html">Eligibility for donating blood</a></li>
+            </ul>
+        </li>
+		<li>
+		<a href="sbb.html">Blood Banks</a>
+		<ul class="hidden">
+		<li>
+            <a href="sbb.html">Search Blood Banks</a>
+            <a href="resistrationform.html">Registration form for user and doctor</a>
+        </li>
+		</ul>
+		</li>
+        <li><a href="feedbacklogin.html">Feedback</a></li>
+        <li><a href="contact.html">Contact</a></li>
+		<li><a href="loginpage.html">Login/Resister</a></li>
+    </ul>
+	</div>
+<div class="grid-container">
+<div class="item1">
+<form name="sfrm" method="post" action="" onsubmit="return iFormCheck();" style="margin:30px;" target="_blank"  >
+	<div style="background: url(images/hp-src-bg-top.gif) repeat-y; width:280px;">
+		<div style="height:247px;">
+			<div style="padding: 10px 10px 10px 10px;" class="select1">				
+				<font class="headtxt">Search Blood Bank</font><img src="favi.png" alt="Blood Drop" style="float:left; margin: 2px 10px 0 0;" /><br clear="all"><br>
+
+				<div class="left" style="width:65px;">State :</div><div class="left">
+				<div id="state2">
+				<select id="state2" name="state2" style="width:165px;" class="select" onchange="return searchselectlocation(document.sfrm.state2.options[document.sfrm.state2.selectedIndex].value ,'',2);">	
+					<option value="" selected=""> --- Select State ---</option>
+							<option value="INAN"> Andaman Nicobar			</option><option value="INAP"> Andhra Pradesh			</option><option value="INAR"> Arunachal Pradesh			</option><option value="INAS"> Assam			</option><option value="INBI"> Bihar			</option><option value="INCH"> Chandigarh			</option><option value="INCT"> Chhattisgarh			</option><option value="INDA"> Dadra and Nagar Haveli			</option><option value="INDD"> Daman and Diu			</option><option value="INDL"> Delhi			</option><option value="INGO"> Goa			</option><option value="INGU"> Gujarat			</option><option value="INHA"> Haryana			</option><option value="INHP"> Himachal Pradesh			</option><option value="INJK"> Jammu and Kashmir			</option><option value="INJH"> Jharkhand			</option><option value="INKA"> Karnataka			</option><option value="INKR"> Kerala			</option><option value="INLA"> Lakshadweep			</option><option value="INMP"> Madhya Pradesh			</option><option value="INMH"> Maharashtra			</option><option value="INMA"> Manipur			</option><option value="INME"> Meghalaya			</option><option value="INMI"> Mizoram			</option><option value="INNA"> Nagaland			</option><option value="INOR"> Orissa			</option><option value="INPY"> Pondicherry			</option><option value="INPB"> Punjab			</option><option value="INRJ"> Rajasthan			</option><option value="INSI"> Sikkim			</option><option value="INTN"> Tamil Nadu			</option><option value="INTR"> Tripura			</option><option value="INUP"> Uttar Pradesh			</option><option value="INUT"> Uttaranchal			</option><option value="INWB"> West Bengal					</option></select></div></div><br clear="all"><br>
+
+				<div class="left" style="width:65px;">City :</div><div class="left">
+				<div id="city2"><select style="width:165px;" tabindex="22" id="city2" name="city2" size="1" class="select" onchange="return searchselectlocation(document.sfrm.state2.options[document.sfrm.state2.selectedIndex].value ,document.sfrm.city2.options[document.sfrm.city2.selectedIndex].value,2);"><option value=""> --- Select City ---</option><option value="0" selected=""> --- Any ---</option>			<option value="9000887"> bagalakot</option>
+					<option value=""> Bagalkot</option>
+					<option value=""> Bangalore</option>
+					<option value=""> bangluru</option>
+					<option value=""> Belgaum</option>
+					<option value=""> Bellary</option>
+					<option value=""> Bidar</option>
+					<option value=""> Bijapur</option>
+					<option value=""> Chamrajnagar</option>
+					<option value=""> Chickmagalur</option>
+					<option value=""> Chitradurga</option>
+					<option value="9"> Dakshin Kannada</option>
+					<option value="9"> Davangere</option>
+					
+					<option value=""> NBI</option>
+					<option value=""> New York</option>
+					<option value=""> pollibetta, south coorg</option>
+					<option value=""> Raichur</option>
+					<option value=""> Saragur</option>
+					<option value=""> Shimoga</option>
+					<option value=""> sirsi</option>
+					<option value=""> Specify the city</option>
+					<option value=""> TARIKERE</option>
+					<option value=""> Tumkur</option>
+					<option value=""> Udupi</option>
+					<option value=""> Uttar Kannada</option>
+					<option value=""> Yellapur </option>
+				</select>
+</div></div><br clear="all"><br>
+
+				<div class="left" style="width:65px;">Area :</div><div class="left">
+				<div id="area2"><select style="width:165px;" id="town2" name="town2" tabindex="24" class="select"><option value=""> --- Select Area ---</option><option value="0" selected=""> --- Any ---</option>			<option value="9265"> Urban</option>
+			<option value="8732"> Electronic City</option>
+			<option value="9329"> Metropolitan</option>
+			<option value="9183"> Rural</option>
+<option value="6483">Others</option></select></div></div><br clear="all"><br>
+
+				<div class="left" style="width:65px;">Group :</div><div class="left">
+				<select name="bloodgroup2" value="" style="width:165px;" class="select">
+					<option value="" selected=""> --- Select Group ---</option>
+							<option value="1"> A1+			</option><option value="2"> A1-			</option><option value="3"> A2+			</option><option value="4"> A2-			</option><option value="5"> B+			</option><option value="6"> B-			</option><option value="7"> A1B+			</option><option value="8"> A1B-			</option><option value="9"> A2B+			</option><option value="10"> A2B-			</option><option value="11"> AB+			</option><option value="12"> AB-			</option><option value="13"> O+			</option><option value="14"> O-			</option><option value="15"> A+			</option><option value="16"> A-					</option></select></div><br clear="all"><br>
+
+				<div class="right">
+				<input type="hidden" name="search" value="true">
+		<span align="left" style="margin-left:20px"><input type = "submit" value = "Search Blood bank"  class="search_btn" onclick="myFunction()"/></span>
+		<script>
+		function myFunction() {
+    alert("No Record found");
+}
+</script>
+				</div>
+			</div>
+		</div>
+	</div></form></div>
+	<div class="item2">
+	<img src="search3.jpg">
+	
+	</div>
+	</div>
+	<footer>
+<marquee scrollamount="10"
+direction="left"
+behavior="scroll">
+<font size="+4"style="color:red;text-size:200px;"><b>“Donation of Blood means a few minutes to you but a lifetime for somebody else.”&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp“Your blood is replaceable. A life is not”</font>
+
+</marquee>
+</footer>
+	</html>

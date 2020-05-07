@@ -1,0 +1,699 @@
+
+<style type="text/css">
+<link rel="stylesheet" href="style.css">
+
+</style>
+<div id="search" style='border:#d09352 solid 2px; width:225px;background:white;border-radius:20px'>
+  <p class="search"><strong>Search for Blood Donor<img src="favi.png" alt="Blood Drop" style="float:left; margin: 2px 10px 0 0;" /></strong></p>
+<form method='get' name='searchDonorForm' action="" onsubmit="return searchDonorValidation();"  target=_blank >
+<table border='0'>
+<tr>
+        <td class='search'>Location</td>
+        <td><span style="padding-left:2px;">
+                <select name='location' id='location' class='select'>
+                <option value='-1'>--Select--</option>
+                				<optgroup label='Top Metropolitan Cities' style="background: rgb(208, 224, 241) none repeat scroll 0% 0%;"></optgroup>
+		                		                <option value="1" >Ahmedabad</option>
+		                		                <option value="2" >Bangalore</option>
+		                		                <option value="3" >Coimbatore</option>
+		                		                <option value="4" >Chennai</option>
+		                		                <option value="2" >Ernakulam</option>
+		                		                <option value="1" >Gurgaon</option>
+		                		                <option value="13" >Hyderabad</option>
+		                		                <option value="6" >Kolkata/Calcutta</option>
+		                		                <option value="2" >Mumbai</option>
+		                		                <option value="5" >New Delhi</option>
+		                		                <option value="1" >Noida</option>
+		                		                <option value="2" >Pune</option>
+		                				<optgroup label='Andaman &amp; Nicobar' style="background: rgb(208, 224, 241) none repeat scroll 0% 0%;"></optgroup>
+		                		                <option value="2" >Andaman</option>
+		                		                <option value="3" >Nicobar</option>
+		                				<optgroup label='Andhra Pradesh' style="background: rgb(208, 224, 241) none repeat scroll 0% 0%;"></optgroup>
+		                		                <option value="9" >Adilabad</option>
+		                		                <option value="8" >Anantpur</option>
+		                		                <option value="10" >Chittor</option>
+		                		                <option value="3" >Cuddapah</option>
+		                		                <option value="11" >east Godavari</option>
+		                		                <option value="12" >Guntur</option>
+		                		                <option value="13" >Hyderabad</option>
+		                		                <option value="4" >Karim Nagar</option>
+		                		                <option value="14" >Khammam</option>
+		                		                <option value="15" >Krishna</option>
+		                		                <option value="5" >Kurnool</option>
+		                		                <option value="17" >Medak</option>
+		                		                <option value="16" >Mehboobnagar</option>
+		                		                <option value="18" >Nalgonda</option>
+		                		                <option value="2" >Nellore</option>
+		                		                <option value="19" >Nizamabad</option>
+		                		                <option value="20" >Prakasam</option>
+		                		                <option value="21" >Ranga Reddy</option>
+		                		                <option value="7" >Srikakulam</option>
+		                		                <option value="22" >Vishakapatnam</option>
+		                		                <option value="23" >Vizianagaram</option>
+		                		                <option value="24" >Warangal</option>
+		                		                <option value="6" >West Godavari</option>
+		                				<optgroup label='Arunachal Pradesh' style="background: rgb(208, 224, 241) none repeat scroll 0% 0%;"></optgroup>
+		                		                <option value="63" >Alog</option>
+		                		                <option value="62" >Bomdila</option>
+		                		                <option value="59" >Changalang</option>
+		                		                <option value="61" >Daporijo</option>
+		                		                <option value="50" >Diban Valley</option>
+		                		                <option value="60" >Dibang Valley</option>
+		                		                <option value="53" >East Siang</option>
+		                		                <option value="52" >Itanagar</option>
+		                		                <option value="51" >Kameng Seppa</option>
+		                		                <option value="56" >Khonsa</option>
+		                		                <option value="54" >Lohit(Tezu)</option>
+		                		                <option value="55" >Lower Subansiri</option>
+		                		                <option value="57" >Roin</option>
+		                		                <option value="58" >Tawang</option>
+		                				<optgroup label='Assam' style="background: rgb(208, 224, 241) none repeat scroll 0% 0%;"></optgroup>
+		                		                <option value="44" >Barpeta</option>
+		                		                <option value="31" >Bongaigaon</option>
+		                		                <option value="48" >Cachar</option>
+		                		                <option value="27" >Darrang</option>
+		                		                <option value="38" >Dhemaji</option>
+		                		                <option value="42" >Dhubri</option>
+		                		                <option value="28" >Dibrugarh</option>
+		                		                <option value="43" >Goalpara</option>
+		                		                <option value="45" >Golaghat</option>
+		                		                <option value="39" >Hailakandi</option>
+		                		                <option value="46" >Jorhat</option>
+		                		                <option value="34" >Kamrup</option>
+		                		                <option value="35" >Karbi-Anglong</option>
+		                		                <option value="26" >Karimganj</option>
+		                		                <option value="33" >Kokrajhar</option>
+		                		                <option value="40" >Lakhimpur</option>
+		                		                <option value="29" >Morigaon</option>
+		                		                <option value="37" >N.C.Hills</option>
+		                		                <option value="36" >Nagaon</option>
+		                		                <option value="32" >Nalbari</option>
+		                		                <option value="47" >Sibsagar</option>
+		                		                <option value="41" >Sonitpur</option>
+		                		                <option value="30" >Tinsukia</option>
+		                				<optgroup label='Bihar' style="background: rgb(208, 224, 241) none repeat scroll 0% 0%;"></optgroup>
+		                		                <option value="94" >Araria</option>
+		                		                <option value="75" >Aurangabad</option>
+		                		                <option value="96" >Banka</option>
+		                		                <option value="77" >Begusarai</option>
+		                		                <option value="95" >Bhabua</option>
+		                		                <option value="73" >Bhagalpur</option>
+		                		                <option value="76" >Bhojpur(Arah)</option>
+		                		                <option value="97" >Buxar</option>
+		                		                <option value="70" >Darbhanga</option>
+		                		                <option value="78" >East Champaran</option>
+		                		                <option value="67" >Gaya</option>
+		                		                <option value="79" >Gopalganj</option>
+		                		                <option value="80" >Jamui</option>
+		                		                <option value="66" >Jehanabad</option>
+		                		                <option value="81" >Katihar</option>
+		                		                <option value="82" >Khagaria</option>
+		                		                <option value="93" >Kishanganj</option>
+		                		                <option value="101" >Lakhisarai</option>
+		                		                <option value="83" >Madhepura</option>
+		                		                <option value="84" >Madhubani</option>
+		                		                <option value="74" >Munger</option>
+		                		                <option value="65" >Muzaffarpur</option>
+		                		                <option value="85" >Nalanda</option>
+		                		                <option value="86" >Nawada</option>
+		                		                <option value="68" >Patna</option>
+		                		                <option value="72" >Purnea</option>
+		                		                <option value="87" >Rohtas(Sasaram)</option>
+		                		                <option value="71" >Saharsa</option>
+		                		                <option value="88" >Samastipur</option>
+		                		                <option value="69" >Saran( Chapra )</option>
+		                		                <option value="99" >Sekhpura</option>
+		                		                <option value="100" >Seohar</option>
+		                		                <option value="89" >Sitamarhi</option>
+		                		                <option value="90" >Siwan</option>
+		                		                <option value="98" >Supaul</option>
+		                		                <option value="91" >Vaishali(Hajipur)</option>
+		                		                <option value="92" >West Champaran</option>
+		                				<optgroup label='Chandigarh' style="background: rgb(208, 224, 241) none repeat scroll 0% 0%;"></optgroup>
+		                		                <option value="570" >Chandigarh</option>
+		                				<optgroup label='Chattisgarh' style="background: rgb(208, 224, 241) none repeat scroll 0% 0%;"></optgroup>
+		                		                <option value="612" >Bastar</option>
+		                		                <option value="613" >Bilaspur</option>
+		                		                <option value="614" >Dantewada</option>
+		                		                <option value="615" >Dhamtari</option>
+		                		                <option value="616" >Durg</option>
+		                		                <option value="617" >Janjgir-Champa</option>
+		                		                <option value="618" >Jashpur</option>
+		                		                <option value="619" >Kanker</option>
+		                		                <option value="620" >Kawardha</option>
+		                		                <option value="621" >Korba</option>
+		                		                <option value="622" >Koriya</option>
+		                		                <option value="623" >Mahasamund</option>
+		                		                <option value="624" >Raigarh</option>
+		                		                <option value="627" >Raipur</option>
+		                		                <option value="625" >Rajnandgaon</option>
+		                		                <option value="626" >Surguja</option>
+		                				<optgroup label='Dadra &amp; Nagar' style="background: rgb(208, 224, 241) none repeat scroll 0% 0%;"></optgroup>
+		                		                <option value="568" >Dadra</option>
+		                				<optgroup label='Daman &amp; Diu' style="background: rgb(208, 224, 241) none repeat scroll 0% 0%;"></optgroup>
+		                		                <option value="565" >Dama</option>
+		                		                <option value="566" >Diu</option>
+		                				<optgroup label='Delhi' style="background: rgb(208, 224, 241) none repeat scroll 0% 0%;"></optgroup>
+		                		                <option value="553" >New Delhi</option>
+		                				<optgroup label='Goa' style="background: rgb(208, 224, 241) none repeat scroll 0% 0%;"></optgroup>
+		                		                <option value="555" >North Goa</option>
+		                		                <option value="556" >South Goa</option>
+		                				<optgroup label='Gujarat' style="background: rgb(208, 224, 241) none repeat scroll 0% 0%;"></optgroup>
+		                		                <option value="107" >Ahmedabad</option>
+		                		                <option value="105" >Amrela</option>
+		                		                <option value="123" >Anand</option>
+		                		                <option value="111" >Banaskantha</option>
+		                		                <option value="113" >Bharuch</option>
+		                		                <option value="120" >Bhavnagar</option>
+		                		                <option value="127" >Dahod</option>
+		                		                <option value="114" >Dangs</option>
+		                		                <option value="112" >Gandhinagar</option>
+		                		                <option value="115" >Jamnagar</option>
+		                		                <option value="109" >Junagadh</option>
+		                		                <option value="106" >Kheda</option>
+		                		                <option value="119" >Kutch</option>
+		                		                <option value="110" >Mehsana</option>
+		                		                <option value="124" >Narmada</option>
+		                		                <option value="122" >Navsari</option>
+		                		                <option value="103" >Panchmahals</option>
+		                		                <option value="125" >Patan</option>
+		                		                <option value="126" >Porbander</option>
+		                		                <option value="116" >Rajkot</option>
+		                		                <option value="118" >Sabarkantha</option>
+		                		                <option value="117" >Surat</option>
+		                		                <option value="121" >Surendranagar</option>
+		                		                <option value="104" >Vadodara</option>
+		                		                <option value="108" >Valsad</option>
+		                				<optgroup label='Haryana' style="background: rgb(208, 224, 241) none repeat scroll 0% 0%;"></optgroup>
+		                		                <option value="131" >Ambala</option>
+		                		                <option value="132" >Bhiwani</option>
+		                		                <option value="133" >Faridabad</option>
+		                		                <option value="147" >Fatehabad</option>
+		                		                <option value="129" >Gurgaon</option>
+		                		                <option value="134" >Hissar</option>
+		                		                <option value="146" >Jhanjhar</option>
+		                		                <option value="135" >Jind</option>
+		                		                <option value="136" >Kaithal</option>
+		                		                <option value="137" >Karnal</option>
+		                		                <option value="138" >Kurukshetra</option>
+		                		                <option value="139" >Mahendragarh</option>
+		                		                <option value="140" >Panchkula</option>
+		                		                <option value="141" >Panipat</option>
+		                		                <option value="145" >Rewari</option>
+		                		                <option value="130" >Rohtak</option>
+		                		                <option value="144" >Sirsa</option>
+		                		                <option value="142" >Sonipat</option>
+		                		                <option value="143" >Yamunanagar</option>
+		                				<optgroup label='Himachal Pradesh' style="background: rgb(208, 224, 241) none repeat scroll 0% 0%;"></optgroup>
+		                		                <option value="155" >Bilaspur</option>
+		                		                <option value="154" >Chamba</option>
+		                		                <option value="150" >Hamirpur</option>
+		                		                <option value="156" >Kangra</option>
+		                		                <option value="157" >Kinnaur</option>
+		                		                <option value="151" >Kullu</option>
+		                		                <option value="158" >Lahaul-Spiti</option>
+		                		                <option value="153" >Mandi</option>
+		                		                <option value="159" >Shimla</option>
+		                		                <option value="149" >Sirmour</option>
+		                		                <option value="152" >Solan</option>
+		                		                <option value="160" >Una</option>
+		                				<optgroup label='Jammu &amp; Kashmir' style="background: rgb(208, 224, 241) none repeat scroll 0% 0%;"></optgroup>
+		                		                <option value="172" >Anantnag</option>
+		                		                <option value="163" >Badgan</option>
+		                		                <option value="166" >Baramula</option>
+		                		                <option value="167" >Doda</option>
+		                		                <option value="169" >Jammu</option>
+		                		                <option value="175" >Kargil</option>
+		                		                <option value="162" >Kathua</option>
+		                		                <option value="170" >Kupwara</option>
+		                		                <option value="174" >Leh</option>
+		                		                <option value="164" >Poonch</option>
+		                		                <option value="171" >Pulwama</option>
+		                		                <option value="165" >Rajauri</option>
+		                		                <option value="173" >Srinagar</option>
+		                		                <option value="168" >Udhampur</option>
+		                				<optgroup label='Jharkhand' style="background: rgb(208, 224, 241) none repeat scroll 0% 0%;"></optgroup>
+		                		                <option value="601" >Bokaro</option>
+		                		                <option value="599" >Chaibasa</option>
+		                		                <option value="602" >Chatra</option>
+		                		                <option value="589" >Deoghar</option>
+		                		                <option value="590" >Dhanbad</option>
+		                		                <option value="598" >Dumka</option>
+		                		                <option value="603" >Garhwa</option>
+		                		                <option value="591" >Giridih</option>
+		                		                <option value="592" >Godda</option>
+		                		                <option value="593" >Gumla</option>
+		                		                <option value="594" >Hazaribagh</option>
+		                		                <option value="600" >Jamshedpur</option>
+		                		                <option value="610" >Jamtara</option>
+		                		                <option value="604" >Koderma</option>
+		                		                <option value="608" >Latehar</option>
+		                		                <option value="595" >Lohardaga</option>
+		                		                <option value="605" >Pakur</option>
+		                		                <option value="596" >Palamu</option>
+		                		                <option value="597" >Ranchi</option>
+		                		                <option value="606" >Sahebganj</option>
+		                		                <option value="609" >Saraikela</option>
+		                		                <option value="607" >Simdega</option>
+		                				<optgroup label='Karnataka' style="background: rgb(208, 224, 241) none repeat scroll 0% 0%;"></optgroup>
+		                		                <option value="630" >Kolkata/Calcutta</option>
+		                		                <option value="192" >Bangalore</option>
+		                		                <option value="185" >Belgaum</option>
+		                		                <option value="184" >Bellary</option>
+		                		                <option value="195" >Bidar</option>
+		                		                <option value="181" >Bijapur</option>
+		                		                <option value="199" >Chamrajnagar</option>
+		                		                <option value="191" >Chickmagalur</option>
+		                		                <option value="179" >Chitradurga</option>
+		                		                <option value="182" >Dakshina Kannada</option>
+		                		                <option value="198" >Davanagare</option>
+		                		                <option value="187" >Dharwad</option>
+		                		                <option value="202" >Gadak</option>
+		                		                <option value="178" >Gulberga</option>
+		                		                <option value="186" >Hassan</option>
+		                		                <option value="201" >Haveri</option>
+		                		                <option value="196" >Karwar</option>
+		                		                <option value="180" >Kolar</option>
+		                		                <option value="200" >Koppal</option>
+		                		                <option value="193" >Madikeri</option>
+		                		                <option value="190" >Mandya</option>
+		                		                <option value="177" >Mysore</option>
+		                		                <option value="183" >Raichur</option>
+		                		                <option value="189" >Shimoga</option>
+		                		                <option value="194" >Tumkur</option>
+		                		                <option value="197" >Udupi</option>
+		                		                <option value="203" >Yadgir</option>
+		                				<optgroup label='Kerala' style="background: rgb(208, 224, 241) none repeat scroll 0% 0%;"></optgroup>
+		                		                <option value="218" >Alapuzzha</option>
+		                		                <option value="209" >Cannanore</option>
+		                		                <option value="208" >Ernakulam</option>
+		                		                <option value="207" >Idukki</option>
+		                		                <option value="206" >Kasaragod</option>
+		                		                <option value="217" >Kottayam</option>
+		                		                <option value="205" >Kozhikode</option>
+		                		                <option value="210" >Mallapuram</option>
+		                		                <option value="211" >Palghat</option>
+		                		                <option value="212" >Pathanamthitta</option>
+		                		                <option value="213" >Quilon</option>
+		                		                <option value="214" >Trichur</option>
+		                		                <option value="216" >Trivandrum</option>
+		                		                <option value="215" >Wayanad</option>
+		                				<optgroup label='Lakshdweep' style="background: rgb(208, 224, 241) none repeat scroll 0% 0%;"></optgroup>
+		                		                <option value="563" >Lakshdweep</option>
+		                				<optgroup label='Madhya Pradesh' style="background: rgb(208, 224, 241) none repeat scroll 0% 0%;"></optgroup>
+		                		                <option value="265" >Anooppur</option>
+		                		                <option value="267" >Ashoknagar</option>
+		                		                <option value="260" >Badwani</option>
+		                		                <option value="231" >Balaghat</option>
+		                		                <option value="232" >Betul</option>
+		                		                <option value="233" >Bhind</option>
+		                		                <option value="223" >Bhopal</option>
+		                		                <option value="266" >Burhanpur</option>
+		                		                <option value="235" >Chhattarpur</option>
+		                		                <option value="229" >Chhindwara</option>
+		                		                <option value="236" >Damoh</option>
+		                		                <option value="237" >Datia</option>
+		                		                <option value="238" >Dewas</option>
+		                		                <option value="239" >Dhar</option>
+		                		                <option value="258" >Dindori</option>
+		                		                <option value="240" >Guna</option>
+		                		                <option value="241" >Gwalior</option>
+		                		                <option value="264" >Harda</option>
+		                		                <option value="224" >Hoshangabad</option>
+		                		                <option value="225" >Indore</option>
+		                		                <option value="222" >Jabalpur</option>
+		                		                <option value="242" >Jhabua</option>
+		                		                <option value="262" >Katni</option>
+		                		                <option value="256" >Khandwa</option>
+		                		                <option value="257" >Khargone</option>
+		                		                <option value="234" >Mandla</option>
+		                		                <option value="244" >Mandsaur</option>
+		                		                <option value="251" >Morena</option>
+		                		                <option value="245" >Narsinghpur</option>
+		                		                <option value="263" >Neemuch</option>
+		                		                <option value="246" >Panna</option>
+		                		                <option value="247" >Raisen</option>
+		                		                <option value="248" >Rajgarh</option>
+		                		                <option value="230" >Ratlam</option>
+		                		                <option value="226" >Rewa</option>
+		                		                <option value="249" >Sagar</option>
+		                		                <option value="227" >Satna</option>
+		                		                <option value="243" >Sehore</option>
+		                		                <option value="250" >Seoni</option>
+		                		                <option value="228" >Shahdol</option>
+		                		                <option value="253" >Shajapur</option>
+		                		                <option value="261" >Sheopur</option>
+		                		                <option value="252" >Shivpuri</option>
+		                		                <option value="220" >Sindi</option>
+		                		                <option value="254" >Tikamgarh</option>
+		                		                <option value="255" >Ujjain</option>
+		                		                <option value="259" >Umaria</option>
+		                		                <option value="221" >Vidisha</option>
+		                				<optgroup label='Maharashtra' style="background: rgb(208, 224, 241) none repeat scroll 0% 0%;"></optgroup>
+		                		                <option value="289" >Ahmednagar</option>
+		                		                <option value="273" >Akola</option>
+		                		                <option value="286" >Amravati</option>
+		                		                <option value="269" >Aurangabad</option>
+		                		                <option value="270" >Bandra</option>
+		                		                <option value="290" >Beed</option>
+		                		                <option value="291" >Bhandara</option>
+		                		                <option value="281" >Buldhana</option>
+		                		                <option value="274" >Chandrapur</option>
+		                		                <option value="282" >Dhule</option>
+		                		                <option value="292" >Gadchiroli</option>
+		                		                <option value="302" >Gondia</option>
+		                		                <option value="303" >Hingoli</option>
+		                		                <option value="275" >Jalgaon</option>
+		                		                <option value="293" >Jalna</option>
+		                		                <option value="283" >Kolhpur</option>
+		                		                <option value="279" >Latur</option>
+		                		                <option value="280" >Mumbai</option>
+		                		                <option value="271" >Nagpur</option>
+		                		                <option value="284" >Nanded</option>
+		                		                <option value="300" >Nandurbar</option>
+		                		                <option value="287" >Nashik</option>
+		                		                <option value="294" >Osmanabad</option>
+		                		                <option value="276" >Parbhani</option>
+		                		                <option value="272" >Pune</option>
+		                		                <option value="285" >Raigad</option>
+		                		                <option value="295" >Ratnagiri</option>
+		                		                <option value="296" >Sangli</option>
+		                		                <option value="297" >Satara</option>
+		                		                <option value="277" >Sholapur</option>
+		                		                <option value="298" >Sindudurg</option>
+		                		                <option value="278" >Thane</option>
+		                		                <option value="288" >Wardha</option>
+		                		                <option value="301" >Washim</option>
+		                		                <option value="299" >Yavatmal</option>
+		                				<optgroup label='Manipur' style="background: rgb(208, 224, 241) none repeat scroll 0% 0%;"></optgroup>
+		                		                <option value="308" >Bishnupur</option>
+		                		                <option value="309" >Chandel</option>
+		                		                <option value="310" >Churachandpur</option>
+		                		                <option value="305" >Imphal East</option>
+		                		                <option value="306" >Imphal West</option>
+		                		                <option value="311" >Senapati</option>
+		                		                <option value="313" >Tamenglong</option>
+		                		                <option value="307" >Thoubal</option>
+		                		                <option value="312" >Ukhrul</option>
+		                				<optgroup label='Meghalaya' style="background: rgb(208, 224, 241) none repeat scroll 0% 0%;"></optgroup>
+		                		                <option value="318" >East Garo Hill</option>
+		                		                <option value="317" >East Khasi Hill</option>
+		                		                <option value="320" >Jaintia Hill</option>
+		                		                <option value="315" >Ri-Bhoi District</option>
+		                		                <option value="316" >South Garo Hills</option>
+		                		                <option value="319" >West Garo Hill</option>
+		                		                <option value="321" >West Khasi Hill</option>
+		                				<optgroup label='Mizoram' style="background: rgb(208, 224, 241) none repeat scroll 0% 0%;"></optgroup>
+		                		                <option value="325" >Aizawal</option>
+		                		                <option value="326" >Champhai</option>
+		                		                <option value="324" >Chimtipui District</option>
+		                		                <option value="328" >Kolasib</option>
+		                		                <option value="330" >Lawngtlai</option>
+		                		                <option value="323" >Luglei District</option>
+		                		                <option value="327" >Mamit</option>
+		                		                <option value="329" >Serchhip</option>
+		                				<optgroup label='Nagaland' style="background: rgb(208, 224, 241) none repeat scroll 0% 0%;"></optgroup>
+		                		                <option value="339" >Dimapur</option>
+		                		                <option value="336" >Kohima</option>
+		                		                <option value="338" >Mokokchung</option>
+		                		                <option value="335" >Mon</option>
+		                		                <option value="333" >Phek</option>
+		                		                <option value="334" >Tuensang</option>
+		                		                <option value="332" >Wokha</option>
+		                		                <option value="337" >Zunheboto</option>
+		                				<optgroup label='Orissa' style="background: rgb(208, 224, 241) none repeat scroll 0% 0%;"></optgroup>
+		                		                <option value="349" >Angul</option>
+		                		                <option value="356" >Balangir</option>
+		                		                <option value="367" >Balasore</option>
+		                		                <option value="357" >Bargah</option>
+		                		                <option value="346" >Bhadrak</option>
+		                		                <option value="345" >Boudh</option>
+		                		                <option value="351" >Cuttak</option>
+		                		                <option value="358" >Deogarh</option>
+		                		                <option value="348" >Dhenkanal</option>
+		                		                <option value="344" >Gajapati</option>
+		                		                <option value="347" >Ganjam</option>
+		                		                <option value="359" >Jagatsinghpur</option>
+		                		                <option value="360" >Jajpur</option>
+		                		                <option value="361" >Jharsuguda</option>
+		                		                <option value="353" >Kalhandi</option>
+		                		                <option value="362" >Kendrapara</option>
+		                		                <option value="369" >Keonjhar</option>
+		                		                <option value="341" >Khurda</option>
+		                		                <option value="354" >Koraput</option>
+		                		                <option value="363" >Malkangiri</option>
+		                		                <option value="368" >Mayurbhanj</option>
+		                		                <option value="343" >Navapada</option>
+		                		                <option value="342" >Navaragpur</option>
+		                		                <option value="364" >Nayagarh</option>
+		                		                <option value="355" >Phulbani</option>
+		                		                <option value="350" >Puri</option>
+		                		                <option value="365" >Rayagada</option>
+		                		                <option value="352" >Sambalpur</option>
+		                		                <option value="366" >Sonepur</option>
+		                		                <option value="370" >Sundergarh</option>
+		                				<optgroup label='Pondicherry' style="background: rgb(208, 224, 241) none repeat scroll 0% 0%;"></optgroup>
+		                		                <option value="558" >Karikal</option>
+		                		                <option value="559" >Mahe</option>
+		                		                <option value="561" >Pondicherry</option>
+		                		                <option value="560" >Yaman</option>
+		                				<optgroup label='Punjab' style="background: rgb(208, 224, 241) none repeat scroll 0% 0%;"></optgroup>
+		                		                <option value="378" >Amritsar</option>
+		                		                <option value="375" >Bhatinda</option>
+		                		                <option value="384" >Faridkot</option>
+		                		                <option value="380" >Fatehgarh Saheb</option>
+		                		                <option value="379" >Ferozepur</option>
+		                		                <option value="382" >Gurdaspur</option>
+		                		                <option value="383" >Hosiarpur</option>
+		                		                <option value="373" >Jalandhar</option>
+		                		                <option value="376" >Kapurthala</option>
+		                		                <option value="374" >Ludhiana</option>
+		                		                <option value="385" >Mansa</option>
+		                		                <option value="386" >Moga</option>
+		                		                <option value="387" >Muktsar</option>
+		                		                <option value="388" >Navansahar</option>
+		                		                <option value="377" >Patiala</option>
+		                		                <option value="381" >Ropar</option>
+		                		                <option value="372" >Sangrur</option>
+		                				<optgroup label='Rajasthan' style="background: rgb(208, 224, 241) none repeat scroll 0% 0%;"></optgroup>
+		                		                <option value="406" >Ajmer</option>
+		                		                <option value="407" >Alwar</option>
+		                		                <option value="404" >Banswara</option>
+		                		                <option value="419" >Baran</option>
+		                		                <option value="391" >Barmer</option>
+		                		                <option value="408" >Bharatpur</option>
+		                		                <option value="405" >Bhilwara</option>
+		                		                <option value="396" >Bikaner</option>
+		                		                <option value="398" >Bundi</option>
+		                		                <option value="409" >Chittorgarh</option>
+		                		                <option value="410" >Churu</option>
+		                		                <option value="397" >Dausa</option>
+		                		                <option value="411" >Dholpur</option>
+		                		                <option value="392" >Dungarpur</option>
+		                		                <option value="412" >Ganganagar</option>
+		                		                <option value="420" >Hanumangarh</option>
+		                		                <option value="390" >Jaipur</option>
+		                		                <option value="401" >Jaisalmer</option>
+		                		                <option value="413" >Jalor</option>
+		                		                <option value="414" >Jhalawar</option>
+		                		                <option value="415" >Jhunjhunu</option>
+		                		                <option value="393" >Jodhpur</option>
+		                		                <option value="421" >Karauli</option>
+		                		                <option value="394" >Kota</option>
+		                		                <option value="402" >Nagaur</option>
+		                		                <option value="416" >Pali</option>
+		                		                <option value="403" >Rajsamand</option>
+		                		                <option value="417" >Sawai Madhopur</option>
+		                		                <option value="399" >Sikar</option>
+		                		                <option value="418" >Sirohi</option>
+		                		                <option value="400" >Tonk</option>
+		                		                <option value="395" >Udaipur</option>
+		                				<optgroup label='Sikkim' style="background: rgb(208, 224, 241) none repeat scroll 0% 0%;"></optgroup>
+		                		                <option value="423" >East</option>
+		                		                <option value="426" >North</option>
+		                		                <option value="424" >South</option>
+		                		                <option value="425" >West</option>
+		                				<optgroup label='Tamil Nadu' style="background: rgb(208, 224, 241) none repeat scroll 0% 0%;"></optgroup>
+		                		                <option value="428" >Chennai</option>
+		                		                <option value="429" >Coimbatore</option>
+		                		                <option value="430" >Cuddalorei</option>
+		                		                <option value="431" >Dharmapuri</option>
+		                		                <option value="432" >Dindigul</option>
+		                		                <option value="433" >Erode</option>
+		                		                <option value="434" >Kancheepuram</option>
+		                		                <option value="435" >Kanniyakumari</option>
+		                		                <option value="436" >Karur</option>
+		                		                <option value="437" >Madurai</option>
+		                		                <option value="438" >Nagapattinam</option>
+		                		                <option value="439" >Namakkal</option>
+		                		                <option value="440" >Nilgiris</option>
+		                		                <option value="441" >Perambalur</option>
+		                		                <option value="442" >Pudukkottai</option>
+		                		                <option value="443" >Ramanathapuram</option>
+		                		                <option value="444" >Salem</option>
+		                		                <option value="445" >Sivaganga</option>
+		                		                <option value="446" >Thanjavur</option>
+		                		                <option value="447" >Theni</option>
+		                		                <option value="448" >Thoothkudi</option>
+		                		                <option value="449" >Tiruchiorappalli</option>
+		                		                <option value="450" >Tirunelveli</option>
+		                		                <option value="451" >Tiruvallur</option>
+		                		                <option value="452" >Tiruvannamalai</option>
+		                		                <option value="453" >Tiruvarur</option>
+		                		                <option value="454" >Vellore</option>
+		                		                <option value="455" >Villupuram</option>
+		                		                <option value="456" >Virudhunagar</option>
+		                				<optgroup label='Tripura' style="background: rgb(208, 224, 241) none repeat scroll 0% 0%;"></optgroup>
+		                		                <option value="461" >Dhalai District</option>
+		                		                <option value="458" >North District</option>
+		                		                <option value="459" >South District</option>
+		                		                <option value="460" >West District</option>
+		                				<optgroup label='Uttar Pradesh' style="background: rgb(208, 224, 241) none repeat scroll 0% 0%;"></optgroup>
+		                		                <option value="476" >Agra</option>
+		                		                <option value="464" >Aligarh</option>
+		                		                <option value="463" >Allahabad</option>
+		                		                <option value="520" >Ambedkarnagar</option>
+		                		                <option value="511" >Azamgarh</option>
+		                		                <option value="529" >Bagpat</option>
+		                		                <option value="508" >Bahraich</option>
+		                		                <option value="513" >Balia</option>
+		                		                <option value="527" >Balrampur</option>
+		                		                <option value="506" >Banda</option>
+		                		                <option value="479" >Barabanki</option>
+		                		                <option value="465" >Bareilly</option>
+		                		                <option value="502" >Basti</option>
+		                		                <option value="514" >Bhadoi</option>
+		                		                <option value="492" >Bijnor</option>
+		                		                <option value="489" >Budaun</option>
+		                		                <option value="486" >Bulandshehar</option>
+		                		                <option value="526" >Chandauli</option>
+		                		                <option value="503" >Deoria</option>
+		                		                <option value="483" >Etah</option>
+		                		                <option value="481" >Etawah</option>
+		                		                <option value="472" >Faizabad</option>
+		                		                <option value="495" >Farrukhabad</option>
+		                		                <option value="496" >Fatehpur</option>
+		                		                <option value="488" >Firozabad</option>
+		                		                <option value="482" >Gazipur</option>
+		                		                <option value="469" >Ghaziabad</option>
+		                		                <option value="466" >Gonda</option>
+		                		                <option value="473" >Gorakpur</option>
+		                		                <option value="499" >Hamirpur</option>
+		                		                <option value="467" >Hardoi</option>
+		                		                <option value="498" >Jalaun</option>
+		                		                <option value="512" >Jaunpur</option>
+		                		                <option value="474" >Jhansi</option>
+		                		                <option value="523" >jyotiba Phoole Nagar</option>
+		                		                <option value="530" >Kanooj</option>
+		                		                <option value="468" >Kanpur Dehat</option>
+		                		                <option value="494" >Kanpur(Nagar)</option>
+		                		                <option value="524" >Kaushambi</option>
+		                		                <option value="507" >Lakhimpur-Khedi</option>
+		                		                <option value="500" >Lalitpur</option>
+		                		                <option value="475" >Lucknow</option>
+		                		                <option value="522" >Maha Maya Nagar</option>
+		                		                <option value="516" >Maharajganj</option>
+		                		                <option value="519" >Mahoba</option>
+		                		                <option value="480" >Mainpuri</option>
+		                		                <option value="487" >Mathura</option>
+		                		                <option value="510" >Mau</option>
+		                		                <option value="477" >Meerut</option>
+		                		                <option value="501" >Mirzapur</option>
+		                		                <option value="478" >Moradabad</option>
+		                		                <option value="484" >Muzaffar Nagar</option>
+		                		                <option value="521" >Noida</option>
+		                		                <option value="531" >Oraiyya</option>
+		                		                <option value="515" >Padrauna</option>
+		                		                <option value="491" >Pilibhit</option>
+		                		                <option value="497" >Pratapgarh</option>
+		                		                <option value="504" >Raebareili</option>
+		                		                <option value="493" >Rampur</option>
+		                		                <option value="485" >Saharanpur</option>
+		                		                <option value="532" >Sant Kabir Nagar</option>
+		                		                <option value="490" >Shahjahanpur</option>
+		                		                <option value="525" >Shooji Maharaj</option>
+		                		                <option value="528" >Shravati</option>
+		                		                <option value="517" >Siddharth Nagar</option>
+		                		                <option value="505" >Sitapur</option>
+		                		                <option value="509" >Sultanpur</option>
+		                		                <option value="518" >Sunbhadra</option>
+		                		                <option value="470" >Unnav</option>
+		                		                <option value="471" >Varanasi</option>
+		                				<optgroup label='Uttaranchal' style="background: rgb(208, 224, 241) none repeat scroll 0% 0%;"></optgroup>
+		                		                <option value="585" >Dehradun</option>
+		                		                <option value="587" >Haridwar</option>
+		                		                <option value="578" >Udhamsingh Nagar</option>
+		                				<optgroup label='West Bengal' style="background: rgb(208, 224, 241) none repeat scroll 0% 0%;"></optgroup>
+		                		                <option value="543" >Bankura</option>
+		                		                <option value="544" >Bardhaman</option>
+		                		                <option value="540" >Birbhum</option>
+		                		                <option value="538" >Coochbehar</option>
+		                		                <option value="548" >Dakshin Dinajpur</option>
+		                		                <option value="535" >Darjeeling</option>
+		                		                <option value="546" >Hooghly</option>
+		                		                <option value="534" >Howrah</option>
+		                		                <option value="545" >Jalpaiguri</option>
+		                		                <option value="539" >Malda</option>
+		                		                <option value="536" >Medinipur</option>
+		                		                <option value="7" >Murshidabad</option>
+		                		                <option value="7" >Nadia</option>
+		                		                <option value="1" >North 24 Parganas</option>
+		                		                <option value="549" >Purulia</option>
+		                		                <option value="1" >Siliguri</option>
+		                		                <option value="2" >South 24 Parganas</option>
+		                		                <option value="0" >Uttar Dinajpur</option>
+		                                </select>
+                <div id='locationErr' style='display:none;color:red;padding-left:2px;font-size:9px;'>Please select location</div>
+                </span>
+        </td>
+</tr>
+<tr>
+        <td class='search'>Blood Group</td>
+        <td><span style="padding-left:2px;">
+                <select name='bloodGroup' id='bloodGroup' class="select">
+                <option value='-1'>--Select--</option>
+                                <option value="1" >A+</option>
+                                <option value="2" >A-</option>
+                                <option value="4" >B+</option>
+                                <option value="3" >B-</option>
+                                <option value="5" >O+</option>
+                                <option value="6" >O-</option>
+                                <option value="7" >AB+</option>
+                                <option value="8" >AB-</option>
+                                <option value="9" >A1+</option>
+                                <option value="10" >A1-</option>
+                                <option value="11" >A2+</option>
+                                <option value="12" >A2-</option>
+                                <option value="13" >A1B+</option>
+                                <option value="14" >A1B-</option>
+                                <option value="15" >A2B+</option>
+                                <option value="16" >A2B-</option>
+                                <option value="17" >Bombay Blood Group</option>
+                                </select>
+                <div id='bloodGroupErr' style='display:none;color:red;padding-left:2px;font-size:9px;'>Please select blood group</div>
+        </span></td>
+</tr>
+<tr>
+        <td class='search'>&nbsp;</td>
+        <td style="padding-left:2px;">
+        <input type='submit' name='submit' value='Submit' style="height:20px;border:red solid 1px; background:blue;width:60px;border-radius:20px" />
+        </td>
+</tr>
+</table>
+</form>
+</div>
+<script type='text/javascript'>
+function searchDonorValidation()
+{
+        err = 0;
+        
+        document.getElementById('locationErr').style.display='none';
+        if(document.getElementById('location').value == '-1') {
+                err++;document.getElementById('locationErr').style.display=''; }        
+        if(document.getElementById('bloodGroup').value == '-1') {
+                err++;document.getElementById('bloodGroupErr').style.display=''; }
+        if(err)
+                return false;
+        return true;
+}
+</script>

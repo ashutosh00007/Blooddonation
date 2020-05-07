@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>Blood donation</title>
+<link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+<body>
+<div class="loginbox">
+<img src="blood-logo (1).png" class="logo">
+<form>
+<h1>Sign up here</h1>
+<p>User name</p>
+<input type="text" name="" placeholder="User name" required>
+<p>Email id</p>
+<input type="text" name="" placeholder="Enter Email" required>
+<p>Password</p>
+<input type="password" name="" placeholder="Enter Password"  id="myInput" required>
+Show Password<input type="checkbox" value="check" onclick="myFunction()">
+<script>
+function myFunction() {
+    var x = document.getElementById("myInput");
+    if (x.type === "password") {
+        x.type = "text";
+    } else {
+        x.type = "password";
+    }
+}
+</script>
+<input type="submit" name="" value="Sign up" onclick="cde()"><br>
+Registered ?<a href="feedbacklogin.html">Login</a>
+or  Goto <a href="home1.html">Home</a>
+
+<script>
+function cde()
+{
+     window.alert("You are login in Home page ");
+}
+</script>
+</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+	<style>
+	
+
+	</style>
+</head>
+<body>
+<div>
+<img src="blood-logo.png"><b style="float:right;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+Cotact us-8577923659</b><b style="color:red;float:right">Give Blood Save Life</b
+
+
+</div>
+<div class="a">
+    <label for="show-menu" class="show-menu">Show Menu</label>
+    <input type="checkbox" id="show-menu" role="button">
+        <ul id="menu">
+        <li><a href="home1.html">Home</a></li>
+        
+        <li>
+            <a href="#">Blood donation ￬</a>
+            <ul class="hidden">
+			<li><a href="process.html">Process of Blood Donation</a></li>
+                <li><a href="benefits of donating blood.html">Benefits of donating blood</a></li>
+                <li><a href="myths.html">Blood donation myths</a></li>
+                <li><a href="eligibility.html">Eligibility for donating blood</a></li>
+            </ul>
+        </li>
+		<li>
+		<a href="sbb.html">Blood Banks</a>
+		<ul class="hidden">
+		<li>
+            <a href="sbb.html">Search Blood Banks</a>
+            <a href="resistrationform.html">Registration form for user and doctor</a>
+        </li>
+		</ul>
+		</li>
+        <li><a href="feedbacklogin.html">Feedback</a></li>
+        <li><a href="contact.html">Contact</a></li>
+		<li><a href="loginpage.html">Login/Resister</a></li>
+    </ul>
+	</div>
+	<link rel="stylesheet" href="rejisterpage.css">
+	<div class="grid-container112">
+	
+	<div class="item1"><h1>Register</h1>
+	<h3>Whether you are an existing donor or completely new to blood<br> donation, your online account will allow you to do the following:</h3>
+	<p>If you want to register as a new blood donor then you must be aged between 17-65.<br> Find out more about who can give blood. You must use a unique email address<br>
+	that can only be accessed by yourself. This service is for whole blood donors who<br> donate in India only; platelet donors are unable to register for an online account.</p>
+	<form>
+	<b>Name:</b><br>
+<input type="text" placeholder=""><br><br>
+	<b>Email Address:</b><br>
+<input type="email" placeholder=""><br>
+	<br><b>Password:</b><br><input type="password" placeholder="Password" id="password" required><br>
+  <br> <b> Re-enter Password: </b><br>  <input type="password" placeholder="Confirm Password" id="confirm_password" required>
+   <script>var password = document.getElementById("password")
+  , confirm_password = document.getElementById("confirm_password");
+
+function validatePassword(){
+  if(password.value != confirm_password.value) {
+    confirm_password.setCustomValidity("Passwords Don't Match");
+  } else {
+    confirm_password.setCustomValidity('');
+  }
+}
+
+password.onchange = validatePassword;
+confirm_password.onkeyup = validatePassword;
+   </script>
+  <br><br><b>Select Blood Group:<b><br> <select name="dpBloodGroup" id="dpBloodGroup" class="textarea">
+
+   <option value="Select">----------Select----------</option>
+	<option value="A+">A+</option>
+	<option value="A-">A-</option>
+	<option value="A1+">A1+</option>
+	<option value="A1-">A1-</option>
+	<option value="A1B+">A1B+</option>
+	<option value="A1B-">A1B-</option>
+	<option value="A2+">A2+</option>
+	<option value="A2-">A2-</option>
+	<option value="A2B+">A2B+</option>
+	<option value="A2B-">A2B-</option>
+	<option value="AB+">AB+</option>
+	<option value="AB-">AB-</option>
+	<option value="B+">B+</option>
+	<option value="B-">B-</option>
+	<option value="Bombay Blood Group">Bombay Blood Group</option>
+	<option value="INRA">INRA</option>
+	<option value="O+">O+</option>
+	<option value="O-">O-</option>
+
+</select>
+
+	<br><br><input type="submit" value="        Resister Now        " style="background-color:red;border:25px;"class="button12" onclick="alert('Thank You for registering')">
+	</form>
+	<p><small><b>Already have an online account?<a style="color:red" href="loginpage.html"> Sign in.</a></small></p>
+	</div>
+	<div class="item2">
+	<br><br><br><br><br><img src="blood-donation.jpg">
+	
+	</div>
+	</body>
+<footer>
+<marquee scrollamount="10"
+direction="left"
+behavior="scroll">
+<font size="+4"style="color:red;text-size:200px;"><b>“Donation of Blood means a few minutes to you but a lifetime for somebody else.”&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp“Your blood is replaceable. A life is not”</font>
+
+</marquee>
+</footer>
+
+
+</html>
